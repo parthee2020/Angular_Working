@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AngularJS Working</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bower_components/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/bootstrap-responsive.min.css" rel="stylesheet">
+  <script src="angular.js"></script>
+  <script src="app.js"></script>
+  </head>
+  <body ng-app="PhoneApp">
+    <div ng-controller="PhoneListController1">
+    <ul>
+      <li ng-repeat="phone in phones">
+      <span> {{phone.name}} </span>
+      <span> {{phone.snippet}} </span>
+      </li>
+      </li>
+    </ul>
+
+ <p>Nothing here {{'yet' + '!'}}</p>
+ <p>1 + 2 = {{1 + 2}}</p>
+</div>
+  </body>
+</html>
